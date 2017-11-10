@@ -11,48 +11,51 @@
   crossorigin="anonymous"></script>
 </head>
 <body>
-	<h1 id="title">Crystals Collector!</h1>
-		<div class="row">
-				<div class="col-md-4">
-					<div class="instructions">
-						<p class="instruction">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p><br>
-						<p class="instruction">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p><br><br>
-						<p class="instruction">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p><br><br>
-						<p class="instruction">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+	<div class="container">
+		<h1 id="title">Crystals Collector!</h1>
+			<div class="row">				
+					<div class="col-md-4">
+						<div class="instructions">
+							<p class="instruction">You will be given a random number at the start of the game.</p><br>
+							<p class="instruction">There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p><br>
+							<p class="instruction">You win by matching your total score to the random number. However, you will lose the game if your score goes over the random number.</p><br>
+							<p class="instruction">The value of each crystal is hidden from you until you click on it.</p><br>
+							<p class="instruction">Each time when the game starts, the game will change the values of each crystal.</p>
+						</div>
 					</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 randomNumber">39</div>
+				<div class="col-md-4 winLossBox">
+					<p>Wins: <span id="winTotal">0</span></p>
+					<p>Losses: <span id="lossTotal">0</span></p>
 				</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4 randomNumber">39</div>
-			<div class="col-md-4 winLossBox">
-				<p>Wins: <span id="winTotal">0</span></p>
-				<p>Losses: <span id="lossTotal">0</span></p>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-1">
-				<button id="ruby">Ruby</button>
+			<div class="row">
+				<div class="col-md-1">
+					<img id="ruby" src="./assets/images/ruby-simple-hi.png">
+				</div>
+				<div class="col-md-1">
+					<img id="diamond" src="./assets/images/diamond-1.png">
+				</div>
+				<div class="col-md-1">
+					<img id="crystal" src="./assets/images/yellow-gem.png">
+				</div>
+				<div class="col-md-1">
+					<img id="emerald" src="./assets/images/emerald-1.png">
+				</div>
 			</div>
-			<div class="col-md-1">
-				<button id="diamond">Diamond</button>
+			<div class="row score">
+				<div class="col-md-4">
+					<p>Your total score is: </p>
+				</div>
 			</div>
-			<div class="col-md-1">
-				<button id="crystal">Crystal</button>
+			<div class="row score">
+				<div class="col-md-4">
+					<span id="userScore">0</span>
+				</div>
 			</div>
-			<div class="col-md-1">
-				<button id="emerald">Emerald</button>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-1">
-				<p>Your total score is: </p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4">
-				<span id="userScore">0</span>
-			</div>
-		</div>
+	</div>
 
 		<script src="./assets/javascript/game.js"></script>
 

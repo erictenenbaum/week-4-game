@@ -4,12 +4,35 @@
 
 .row {
 	padding: 5px;
-	margin-left: : 10px;
-	text-align: center;
+	margin-left: : 10px;	
 }
 
 .randomNumber {
 	border: 1px solid black;
 	padding: 15px;
+	text-align: center;
+}
+
+#diamond {
+	height: 50px;
+	width: 50px;
+}
+
+#crystal {
+	height: 50px;
+	width: 50px;
+}
+
+#ruby {
+	height: 50px;
+	width: 50px;
+}
+
+#emerald {
+	height: 50px;
+	width: 50px;
+}
+
+.score {
 	text-align: center;
 }
