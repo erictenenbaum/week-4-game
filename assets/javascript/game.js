@@ -21,10 +21,9 @@ $(".randomNumber").html(randomNumber);
 		userScore = userScore + rubyNumber;		
 		$("#userScore").html(userScore);
 
-			if (userScore > randomNumber) {
-				$("#lossTotal").html(lossTotal++);
+			if (userScore > randomNumber) {				
 				alert("you lose");
-				$("#lossTotal").html(lossTotal++);
+				$("#lossTotal").html(++lossTotal);
 
 				randomNumber =Math.floor(Math.random() * (120 - 19 + 1)) + 19; 
 				rubyNumber = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
@@ -42,7 +41,7 @@ $(".randomNumber").html(randomNumber);
 
 			else if (userScore == randomNumber) {
 				alert("you win!")
-				$("#winTotal").html(winTotal++);
+				$("#winTotal").html(++winTotal);
 
 				randomNumber =Math.floor(Math.random() * (120 - 19 + 1)) + 19; 
 				rubyNumber = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
@@ -67,7 +66,7 @@ $(".randomNumber").html(randomNumber);
 
 			if (userScore > randomNumber) {
 				alert("you lose");
-				$("#lossTotal").html(lossTotal++);
+				$("#lossTotal").html(++lossTotal);
 
 				randomNumber =Math.floor(Math.random() * (120 - 19 + 1)) + 19; 
 				rubyNumber = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
@@ -85,7 +84,7 @@ $(".randomNumber").html(randomNumber);
 
 			else if (userScore == randomNumber) {
 				alert("you win!")
-				$("#winTotal").html(winTotal++);
+				$("#winTotal").html(++winTotal);
 
 				randomNumber =Math.floor(Math.random() * (120 - 19 + 1)) + 19; 
 				rubyNumber = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
@@ -108,7 +107,7 @@ $(".randomNumber").html(randomNumber);
 
 			if (userScore > randomNumber) {
 				alert("you lose");
-				$("#lossTotal").html(lossTotal++);
+				$("#lossTotal").html(++lossTotal);
 
 				randomNumber =Math.floor(Math.random() * (120 - 19 + 1)) + 19; 
 				rubyNumber = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
@@ -126,7 +125,7 @@ $(".randomNumber").html(randomNumber);
 
 			else if (userScore == randomNumber) {
 				alert("you win!")
-				$("#winTotal").html(winTotal++);
+				$("#winTotal").html(++winTotal);
 
 				randomNumber =Math.floor(Math.random() * (120 - 19 + 1)) + 19; 
 				rubyNumber = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
@@ -149,7 +148,7 @@ $(".randomNumber").html(randomNumber);
 
 			if (userScore > randomNumber) {
 				alert("you lose");
-				$("#lossTotal").html(lossTotal++);
+				$("#lossTotal").html(++lossTotal);
 
 				randomNumber =Math.floor(Math.random() * (120 - 19 + 1)) + 19; 
 				rubyNumber = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
@@ -167,7 +166,7 @@ $(".randomNumber").html(randomNumber);
 
 			else if (userScore == randomNumber) {
 				alert("you win!")
-				$("#winTotal").html(winTotal++);
+				$("#winTotal").html(++winTotal);
 
 				randomNumber =Math.floor(Math.random() * (120 - 19 + 1)) + 19; 
 				rubyNumber = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
