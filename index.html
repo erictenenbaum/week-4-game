@@ -3,17 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Gem Collector!</title>
+   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  
-  <script  
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 </head>
 <body>
 	<div class="container">
 		<h1 id="title">Crystals Collector!</h1>
-			<div class="row">				
+			<div class="row">
 					<div class="col-md-4">
 						<div class="instructions">
 							<p class="instruction">You will be given a random number at the start of the game.</p><br>
@@ -31,7 +29,7 @@
 					<p>Losses: <span id="lossTotal">0</span></p>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row" id="crystalHolder">
 				<div class="col-md-1">
 					<img id="ruby" src="./assets/images/ruby-simple-hi.png">
 				</div>
